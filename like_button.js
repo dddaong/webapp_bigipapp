@@ -1,25 +1,27 @@
-'use strict';
+import React from 'react';
+import configureStore from './store/index';
+import { Provider } from 'react-redux';
+import ReactDOM from 'react-dom';
+import reducer from './reducer/index';
+import App from './component/App'
+import './index.css';
 
-const e = React.createElement;
+const store = configureStore(reducer,{
+	"todos" : [
+		{"id":1, "todo":"빨래하기", "complete":false},
+		{"id":2, "todo":"청소하기", "complete":false},
+		{"id":3, "todo":"공부하기", "complete":false}
+	]
+});
 
-class bigip_list extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { liked: false };
-  }
+const render = () => {
+  ReactDOM.render(
+  	<Provider store={store}>
+	    <App/>
+    </Provider>,
+    document.getElementById('root')
+  )
+};
 
-  render() {
-    if (this.state.liked) {
-      return 'You liked this.';
-    }
-
-    return e(
-      'button',
-      { onClick: () => this.setState({ liked: true }) },
-      'Like'
-    );
-  }
-}
-
-const domContainer = document.querySelector('#bigip_list');
-ReactDOM.render(e(LikeButton), domContainer);
+store.subscribe(render);
+render();

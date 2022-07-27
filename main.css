@@ -1,5 +1,36 @@
 body {
-    font-family: 'Gowun Dodum', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Gowun Dodum', 'Raleway', sans-serif;
     margin: 20px;
-  }
+}
+
+div.asis {
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+    background-color: darkgrey;
+    box-sizing: border-box;
+}
+
+div.tobe {
+    float: left;
+    margin-left: 1%;
+    width: 30%;
+    background-color: aquamarine;
+}
+
+div.compare {
+    float: left;
+    width: 30%;
+    margin-left: 1%;
+    background-color: deepskyblue;
+}
+
+select {
+    width: 60%;
+    max-width: 90%;
+    box-align: center;
+}
+
+optgroup.appliance {
+    font-family: 'Gowun Dodum', 'Raleway', sans-serif;
+}

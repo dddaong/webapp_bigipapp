@@ -7,8 +7,6 @@
     <title>BIG-IP Spec Compare</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
@@ -17,20 +15,110 @@
 
 <body>
 
-    <h2>Add React in One Minute</h2>
-    <p>This page demonstrates using React with no build tooling.</p>
-    <p>React is loaded as a script tag.</p>
+    <h1>테스트</h1>
+    Font-face 적용 여부 테스트
+    <p>한글 테스트 : 빅아이피 스펙 비교 웹앱 제작 테스트</p>
+    <p>English Test : BIG-IP Spec compare webapp test</p>
 
+    <div class="asis">
+        <select name="BIG-IP">
+            <optgroup class="appliance">
+                <option value="BIG-IP appliance">기존 BIG-IP</option>
+                <!-- BIG-IP Series Start -->
+                <option value="BIG-IP 1600">BIG-IP 1600</option>
+                <option value="BIG-IP 1600 LC">BIG-IP 1600 LC</option>
+                <option value="BIG-IP 2000s">BIG-IP 2000s</option>
+                <option value="BIG-IP 2200s">BIG-IP 2200s</option>
+                <option value="BIG-IP 3600">BIG-IP 3600</option>
+                <option value="BIG-IP 3900">BIG-IP 3900</option>
+                <option value="BIG-IP 4000s">BIG-IP 4000s</option>
+                <option value="BIG-IP 4200v">BIG-IP 4200v</option>
+                <option value="BIG-IP 5000s">BIG-IP 5000s</option>
+                <option value="BIG-IP 5050s">BIG-IP 5050s</option>
+                <option value="BIG-IP 5200v">BIG-IP 5200v</option>
+                <option value="BIG-IP 5250v">BIG-IP 5250v</option>
+                <option value="BIG-IP 6900">BIG-IP 6900</option>
+                <option value="BIG-IP 6900s">BIG-IP 6900s</option>
+                <option value="BIG-IP 7000">BIG-IP 7000</option>
+                <option value="BIG-IP 7050s">BIG-IP 7050s</option>
+                <option value="BIG-IP 7055s">BIG-IP 7055s</option>
+                <option value="BIG-IP 7200v">BIG-IP 7200v</option>
+                <option value="BIG-IP 7250v">BIG-IP 7250v</option>
+                <option value="BIG-IP 7255s">BIG-IP 7255s</option>
+                <option value="BIG-IP 10000s">BIG-IP 10000s</option>
+                <option value="BIG-IP 10050s">BIG-IP 10050s</option>
+                <option value="BIG-IP 10055s">BIG-IP 10055s</option>
+                <option value="BIG-IP 10150s">BIG-IP 10150s</option>
+                <option value="BIG-IP 10200v">BIG-IP 10200v</option>
+                <option value="BIG-IP 10250v">BIG-IP 10250v</option>
+                <option value="BIG-IP 10255v">BIG-IP 10255v</option>
+                <option value="BIG-IP 10350v">BIG-IP 10350v</option>
+                <option value="BIG-IP 11000">BIG-IP 11000</option>
+                <option value="BIG-IP 11050">BIG-IP 11050</option>
+                <!-- BIG-IP Series End -->
+                <!-- iSeries Start -->
+                <option value="BIG-IP i850">BIG-IP i850</option>
+                <option value="BIG-IP i2600">BIG-IP i2600</option>
+                <option value="BIG-IP i2800">BIG-IP i2800</option>
+                <option value="BIG-IP i4600">BIG-IP i4600</option>
+                <option value="BIG-IP i4800">BIG-IP i4800</option>
+                <option value="BIG-IP i5600">BIG-IP i5600</option>
+                <option value="BIG-IP i5800">BIG-IP i5800</option>
+                <option value="BIG-IP i7600">BIG-IP i7600</option>
+                <option value="BIG-IP i7800">BIG-IP i7800</option>
+                <option value="BIG-IP i10600">BIG-IP i10600</option>
+                <option value="BIG-IP i10800">BIG-IP i10800</option>
+                <option value="BIG-IP i11600">BIG-IP i11600</option>
+                <option value="BIG-IP i11800">BIG-IP i11800</option>
+                <option value="BIG-IP i15600">BIG-IP i15600</option>
+                <option value="BIG-IP i15800">BIG-IP i15800</option>
+                <!-- iSeries End -->
+            </optgroup>
+        </select>
 
-    <div id="bigip_list"></div>
+    </div>
 
-    <!-- React를 실행. -->
-    <!-- 주의: 사이트를 배포할 때는 "development.js"를 "production.min.js"로 대체하세요. -->
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-
-    <!-- 만든 React 컴포넌트를 실행. -->
-    <script src="like_button.js"></script>
+    <div class="tobe">
+        <select name="BIG-IP">
+            <optgroup class="appliance">
+                <!-- iSeries Start -->
+                <option value="BIG-IP appliance">도입대상 BIG-IP</option>
+                <option value="BIG-IP i850">BIG-IP i850</option>
+                <option value="BIG-IP i2600">BIG-IP i2600</option>
+                <option value="BIG-IP i2800">BIG-IP i2800</option>
+                <option value="BIG-IP i4600">BIG-IP i4600</option>
+                <option value="BIG-IP i4800">BIG-IP i4800</option>
+                <option value="BIG-IP i5600">BIG-IP i5600</option>
+                <option value="BIG-IP i5800">BIG-IP i5800</option>
+                <option value="BIG-IP i7600">BIG-IP i7600</option>
+                <option value="BIG-IP i7800">BIG-IP i7800</option>
+                <option value="BIG-IP i10600">BIG-IP i10600</option>
+                <option value="BIG-IP i10800">BIG-IP i10800</option>
+                <option value="BIG-IP i11600">BIG-IP i11600</option>
+                <option value="BIG-IP i11800">BIG-IP i11800</option>
+                <option value="BIG-IP i15600">BIG-IP i15600</option>
+                <option value="BIG-IP i15800">BIG-IP i15800</option>
+                <!-- iSeries End -->
+                <!-- rSeries Start -->
+                <option value="BIG-IP r2600">BIG-IP r2600</option>
+                <option value="BIG-IP r2800">BIG-IP r2800</option>
+                <option value="BIG-IP r2900">BIG-IP r2900</option>
+                <option value="BIG-IP r4600">BIG-IP r4600</option>
+                <option value="BIG-IP r4800">BIG-IP r4800</option>
+                <option value="BIG-IP r4900">BIG-IP r4900</option>
+                <option value="BIG-IP r5600">BIG-IP r5600</option>
+                <option value="BIG-IP r5800">BIG-IP r5800</option>
+                <option value="BIG-IP r5900">BIG-IP r5900</option>
+                <option value="BIG-IP r10600">BIG-IP r10600</option>
+                <option value="BIG-IP r10800">BIG-IP r10800</option>
+                <option value="BIG-IP r10900">BIG-IP r10900</option>
+                <!-- rSeries End -->
+            </optgroup>
+        </select>
+    </div>
+    <div class="compare">
+        <p>비교 결과</p>
+    </div>
 </body>
 
 </html>
